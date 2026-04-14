@@ -66,10 +66,19 @@ function playGame(playerMove) {
 
   if (result === "Kamu Menang") {
     score.menang++;
+    document.querySelector(".result").classList.add("win-color");
+    document.querySelector(".result").classList.remove("lose-color");
+    document.querySelector(".result").classList.remove("tie-color");
   } else if (result === "Kamu Kalah") {
     score.kalah++;
+    document.querySelector(".result").classList.add("lose-color");
+    document.querySelector(".result").classList.remove("win-color");
+    document.querySelector(".result").classList.remove("tie-color");
   } else if (result === "Seri") {
     score.seri++;
+    document.querySelector(".result").classList.add("tie-color");
+    document.querySelector(".result").classList.remove("win-color");
+    document.querySelector(".result").classList.remove("lose-color");
   }
 
   displayScore();

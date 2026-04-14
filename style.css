@@ -81,3 +81,14 @@ h4{
   margin-right: 10px;
   margin-top: 10px;
 }
+
+.lose-color{
+  background-color: red;
+}
+.tie-color{
+  background-color: lightgray;
+  color: black;
+}
+.win-color{
+  background-color: green;
+}
