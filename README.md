@@ -2,7 +2,7 @@
 
 A simple and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript. Play against the computer and track your score in real-time!<br>
 
-🚀 <b>Features ------</b>
+🚀 <b>Features</b>
 <ul>
   <li>🎮 Play Rock, Paper, Scissors against the computer</li>
   <li>🤖 Random computer choice</li>
@@ -20,6 +20,7 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 </ul>
 
 📸 <b>Preview</b><br>
+
 ![Screenshot](images/Screenshot_1.png)<br>
 
 🎯 <b>How to Play</b><br>
