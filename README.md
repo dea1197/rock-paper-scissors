@@ -49,7 +49,7 @@ Add animations ✨<br>
 Multiplayer mode 👥<br>
 
 🌐 Live Demo<br>
-dea-guntingbatukertas.netlify.app<br>
+https://dea-guntingbatukertas.netlify.app/<br>
 
 🙌 Acknowledgment -------<br>
 This project was created as part of learning JavaScript<br> fundamentals and practicing DOM manipulation.
