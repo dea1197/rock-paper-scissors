@@ -1,8 +1,8 @@
-✊✋✌️ <h2>Rock Paper Scissors Game</h2><br>
+✊✋✌️ <b>Rock Paper Scissors Game</b><br>
 
 A simple and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript. Play against the computer and track your score in real-time!<br>
 
-🚀 <h3>Features ------</h3><br>
+🚀 <b>Features ------</b>
 <ul>
   <li>🎮 Play Rock, Paper, Scissors against the computer</li>
   <li>🤖 Random computer choice</li>
@@ -12,17 +12,17 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
   <li>🎨 Clean and modern UI design</li>
 </ul>
 
-🛠️ <h3>Technologies Used ---------</h3><br>
+🛠️ <b>Technologies Used</b><br>
 <ul>
   <li>HTML – Structure of the game</li>
   <li>CSS – Styling and layout</li>
   <li>JavaScript – Game logic and interactivity</li>
 </ul>
 
-📸 <h3>Preview -------</h3><br>
+📸 <b>Preview</b><br>
 ![Screenshot](images/Screenshot_1.png)<br>
 
-🎯 <h3>How to Play -----------</h3><br>
+🎯 <b>How to Play</b><br>
 Click one of the buttons:<br>
 ✊ Rock<br>
 ✋ Paper<br>
@@ -36,26 +36,26 @@ Draw ⚪<br>
 
 Score will update automatically<br>
 
-🔄 <h3>Additional Controls --------------</h3><br>
+🔄 <b>Additional Controls</b><br>
 Reset Score → Reset all scores to 0<br>
 Auto Play → Let the game play automatically<br>
 
-📂 <h3>Project Structure</h3> <br>
+📂 <b>Project Structure</b><br>
 project-folder/<br>
 │── index.html<br>
 │── style.css<br>
 │── script.js<br>
 │── screenshot.png<br>
 
-💡 <h3>Future Improvements</h3><br>
+💡 <b>Future Improvements</b>
 <ul>
   <li>Add sound effects 🎵</li>
   <li>Add animations ✨</li>
   <li>Multiplayer mode 👥</li>
 </ul>
 
-🌐 <h3>Live Demo</h3><br>
+🌐 <b>Live Demo</b><br>
 https://dea-guntingbatukertas.netlify.app/<br>
 
-🙌 <h3>Acknowledgment -------</h3><br>
+🙌 <b>Acknowledgment</b><br>
 This project was created as part of learning JavaScript<br> fundamentals and practicing DOM manipulation.
