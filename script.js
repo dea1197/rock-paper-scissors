@@ -91,6 +91,8 @@ document.querySelector(".js-gunting")
       `
          Loading... Loading...
       `;
+    
+    document.querySelector(".result").innerText = "Loading...";
 
     setTimeout(() => {
       playGame('Gunting');
@@ -106,6 +108,8 @@ document.querySelector(".js-batu")
          Loading... Loading...
       `;
 
+    document.querySelector(".result").innerText = "Loading...";
+
     setTimeout(() => {
       playGame('Batu');
     }, 2000)
@@ -118,6 +122,8 @@ document.querySelector(".js-kertas")
       `
          Loading... Loading...
       `;
+
+    document.querySelector(".result").innerText = "Loading...";
 
     setTimeout(() => {
       playGame('Kertas');
@@ -145,6 +151,8 @@ function autoPlay() {
         `
          Loading... Loading...
       `;
+
+      document.querySelector(".result").innerText = "Loading...";
 
       isAutoPlay = true;
     }, 2000)
