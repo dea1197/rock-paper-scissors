@@ -1,22 +1,24 @@
-✊✋✌️ <b>Rock Paper Scissors Game</b><br>
+<b>🎮 Rock Paper Scissors Game (Game UI Version)</b><br>
 
-A simple and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript. Play against the computer and track your score in real-time!<br>
+An interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript, featuring a modern game-style interface, animations, and sound effects.<br>
 
 🚀 <b>Features</b>
 <ul>
-  <li>🎮 Play Rock, Paper, Scissors against the computer</li>
-  <li>🤖 Random computer choice</li>
-  <li>📊 Score tracking (Win, Lose, Draw)</li>
-  <li>🔁 Reset score button</li>
-  <li>⚡ Auto play mode</li>
-  <li>🎨 Clean and modern UI design</li>
+  <li>🎮 Game-style UI (Battle Arena)</li>
+  <li>💥 Clash animation between player and computer</li>
+  <li>✨ Win glow effect & lose shake effect</li>
+  <li>🔊 Sound effects (click, hit, win, lose)</li>
+  <li>🤖 Auto Play mode</li>
+  <li>💾 Score saved using Local Storage</li>
+  <li>⚡ Smooth animations & transitions</li>
 </ul>
 
 🛠️ <b>Technologies Used</b><br>
 <ul>
-  <li>HTML – Structure of the game</li>
-  <li>CSS – Styling and layout</li>
-  <li>JavaScript – Game logic and interactivity</li>
+  <li>HTML5</li>
+  <li>CSS3 (Animations & Effects)</li>
+  <li>JavaScript (DOM, Logic, Events)</li>
+  <li>Local Storage API</li>
 </ul>
 
 📸 <b>Preview</b><br>
@@ -25,15 +27,19 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 
 🎯 <b>How to Play</b><br>
 Click one of the buttons:<br>
-✊ Rock<br>
-✋ Paper<br>
-✌️ Scissors<br>
+✂️ Scissors<br>
+<svg viewBox="0 0 64 64" width="40">
+  <path d="M20 40 Q15 30 25 25 Q30 15 40 20 Q50 25 45 40 Q40 50 25 48 Q18 45 20 40Z" fill="#64666b"
+    stroke="#0f172a" stroke-width="2" />
+</svg> Rock<br>
+📄 Paper<br>
 
-The computer will randomly choose its move<br>
+Watch the battle animation<br>
+
 The result will be displayed:<br>
 You Win 🟢<br>
 You Lose 🔴<br>
-Draw ⚪<br>
+Draw 🟡<br>
 
 Score will update automatically<br>
 
@@ -41,22 +47,48 @@ Score will update automatically<br>
 Reset Score → Reset all scores to 0<br>
 Auto Play → Let the game play automatically<br>
 
+🔊 <b>Sound Effects</b>
+
+This game includes:<br>
+<ul>
+  <li>Click sound (button interaction)</li>
+  <li>Hit sound (clash effect)</li>
+  <li>Win sound</li>
+  <li>Lose sound</li>
+</ul>
+
+Make sure your browser allows audio playback.
+
 📂 <b>Project Structure</b><br>
-project-folder/<br>
-│── index.html<br>
-│── style.css<br>
-│── script.js<br>
-│── screenshot.png<br>
+rock-paper-scissors/<br>
+│
+├── index.html<br>
+├── style.css<br><br>
+├── script.js
+│
+├── sounds/<br>
+│   ├── click.mp3<br>
+│   ├── hit.mp3<br>
+│   ├── win.mp3<br>
+│   └── lose.mp3<br>
+│
+├── images/<br>
+└── README.md<br>
+
+⚙️ <b>Installation</b><br>
+Clone this repository:<br>
+git clone https://github.com/dea1197/rock-paper-scissors.git<br>
+Open index.html in your browser<br>
 
 💡 <b>Future Improvements</b>
 <ul>
-  <li>Add sound effects 🎵</li>
-  <li>Add animations ✨</li>
-  <li>Multiplayer mode 👥</li>
+  <li>🏆 Ranking system (Bronze → Gold)</li>
+  <li>🌐 Multiplayer mode</li>
+  <li>⚛️ Convert to React</li>
 </ul>
 
 🌐 <b>Live Demo</b><br>
 https://dea-guntingbatukertas.netlify.app/<br>
 
-🙌 <b>Acknowledgment</b><br>
-This project was created as part of learning JavaScript<br> fundamentals and practicing DOM manipulation.
+👨‍💻 <b>Author</b><br>
+Made with ❤️ by Dea
