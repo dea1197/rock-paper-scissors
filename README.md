@@ -85,7 +85,7 @@ Open index.html in your browser<br>
 </ul>
 
 🌐 <b>Live Demo</b><br>
-https://dea-guntingbatukertas.netlify.app/<br>
+https://rock-paper-scissors-psi-jet.vercel.app/<br>
 
 👨‍💻 <b>Author</b><br>
 Made with ❤️ by Dea
