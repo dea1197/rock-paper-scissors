@@ -28,10 +28,7 @@ An interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript, fe
 🎯 <b>How to Play</b><br>
 Click one of the buttons:<br>
 ✂️ Scissors<br>
-<svg viewBox="0 0 64 64" width="40">
-  <path d="M20 40 Q15 30 25 25 Q30 15 40 20 Q50 25 45 40 Q40 50 25 48 Q18 45 20 40Z" fill="#64666b"
-    stroke="#0f172a" stroke-width="2" />
-</svg> Rock<br>
+🪨 Rock<br>
 📄 Paper<br>
 
 Watch the battle animation<br>
