@@ -10,36 +10,78 @@
 
 <body>
 
-  <div class="container">
+  <div class="game-container">
 
-    <div class="div-btn">
-      <button class="btn-emoji js-gunting">
-        <img class="img-emoji" src="images/Gunting-emoji.png">
-      </button>
+    <h1 class="title">⚔️ Battle Arena</h1>
 
-      <button class="btn-emoji js-batu">
-        <img class="img-emoji" src="images/Batu-emoji.png">
-      </button>
+    <div class="score"></div>
 
-      <button class="btn-emoji js-kertas">
-        <img class="img-emoji" src="images/Kertas-emoji.png">
-      </button>
+    <div class="arena">
+
+      <div class="player side">
+        <p>YOU</p>
+        <div class="hand player-hand">❔</div>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <div class="computer side">
+        <p>CPU</p>
+        <div class="hand computer-hand">❔</div>
+      </div>
+
     </div>
 
+    <div class="result">Choose your move</div>
 
-    <h3 class="result"></h3>
+    <div class="buttons">
 
-    <div class="move">
-      
+      <!-- GUNTING -->
+      <button class="js-gunting">
+        <svg viewBox="0 0 64 64" width="40">
+
+          <!-- Handle kiri -->
+          <circle cx="20" cy="46" r="8" stroke="#94a3b8" stroke-width="3" fill="none" />
+
+          <!-- Handle kanan -->
+          <circle cx="44" cy="46" r="8" stroke="#94a3b8" stroke-width="3" fill="none" />
+
+          <!-- Blade kiri -->
+          <line x1="24" y1="40" x2="50" y2="12" stroke="white" stroke-width="4" stroke-linecap="round" />
+
+          <!-- Blade kanan -->
+          <line x1="40" y1="40" x2="14" y2="12" stroke="white" stroke-width="4" stroke-linecap="round" />
+
+          <!-- Pivot (tengah) -->
+          <circle cx="32" cy="36" r="3" fill="#94a3b8" />
+
+        </svg>
+      </button>
+
+      <!-- BATU -->
+      <button class="js-batu">
+        <svg viewBox="0 0 64 64" width="40">
+          <path d="M20 40 Q15 30 25 25 Q30 15 40 20 Q50 25 45 40 Q40 50 25 48 Q18 45 20 40Z" fill="#64666b"
+            stroke="#0f172a" stroke-width="2" />
+        </svg>
+      </button>
+
+      <!-- KERTAS -->
+      <button class="js-kertas">
+        <svg viewBox="0 0 64 64" width="40">
+          <rect x="18" y="12" width="28" height="40" rx="4" fill="#e2e8f0" />
+          <line x1="22" y1="20" x2="42" y2="20" stroke="#94a3b8" stroke-width="2" />
+          <line x1="22" y1="26" x2="42" y2="26" stroke="#94a3b8" stroke-width="2" />
+          <line x1="22" y1="32" x2="38" y2="32" stroke="#94a3b8" stroke-width="2" />
+        </svg>
+      </button>
+
     </div>
 
-    <h4 class="score"></h4>
-
-    <div class="div-btn-reset">
-      <button class="reset-score">Reset Score</button>
+    <div class="controls">
       <button class="auto-play">Auto Play</button>
+      <button class="reset-score">Reset</button>
     </div>
-
 
   </div>
 
