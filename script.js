@@ -87,8 +87,8 @@ function updateUI(playerMove, computerMove, result) {
   computerHand.innerHTML = iconMap[computerMove];
 
   // reset class
-  playerHand.classList.remove("clash-left", "win-glow", "lose-shake");
-  computerHand.classList.remove("clash-right", "win-glow", "lose-shake");
+  playerHand.classList.remove("clash-left", "win-glow", "lose-shake", "lose-glow");
+  computerHand.classList.remove("clash-right", "win-glow", "lose-shake", "lose-glow");
 
   // 💥 tabrakan
   playerHand.classList.add("clash-left");
@@ -97,6 +97,7 @@ function updateUI(playerMove, computerMove, result) {
   hitSound.currentTime = 0;
   hitSound.play();
 
+  // tunggu clash selesai
   setTimeout(() => {
 
     resultEl.innerText = result;
@@ -105,14 +106,33 @@ function updateUI(playerMove, computerMove, result) {
 
     if (result === "Kamu Menang") {
       resultEl.classList.add("win-color");
+
       playerHand.classList.add("win-glow");
+
+      computerHand.classList.add("lose-shake");
+
+      // ✨ glow setelah shake selesai
+      setTimeout(() => {
+        computerHand.classList.remove("lose-glow");
+        void computerHand.offsetWidth;
+        computerHand.classList.add("lose-glow");
+      }, 400);
 
       winSound.currentTime = 0;
       winSound.play();
 
     } else if (result === "Kamu Kalah") {
       resultEl.classList.add("lose-color");
+
+      computerHand.classList.add("win-glow");
+
       playerHand.classList.add("lose-shake");
+
+      setTimeout(() => {
+        playerHand.classList.remove("lose-glow");
+        void playerHand.offsetWidth;
+        playerHand.classList.add("lose-glow");
+      }, 400);
 
       loseSound.currentTime = 0;
       loseSound.play();
@@ -121,7 +141,9 @@ function updateUI(playerMove, computerMove, result) {
       resultEl.classList.add("tie-color");
     }
 
-  }, 300);
+  }, 400); // samakan dengan durasi clash
+
+
 }
 
 
