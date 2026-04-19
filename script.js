@@ -21,6 +21,8 @@ const loseSound = new Audio("sounds/lose.wav");
 const clickSound = new Audio("sounds/click.wav");
 clickSound.volume = 0.5;
 
+const flash = document.querySelector(".impact-flash");
+
 // ==================== LOGIC ====================
 function pickComputerMove() {
   const moves = ["Gunting", "Batu", "Kertas"];
@@ -87,8 +89,8 @@ function updateUI(playerMove, computerMove, result) {
   computerHand.innerHTML = iconMap[computerMove];
 
   // reset class
-  playerHand.classList.remove("clash-left", "win-glow", "lose-shake", "lose-glow");
-  computerHand.classList.remove("clash-right", "win-glow", "lose-shake", "lose-glow");
+  playerHand.classList.remove("clash-left", "win-glow", "lose-effect");
+  computerHand.classList.remove("clash-right", "win-glow", "lose-effect");
 
   // 💥 tabrakan
   playerHand.classList.add("clash-left");
@@ -96,6 +98,11 @@ function updateUI(playerMove, computerMove, result) {
 
   hitSound.currentTime = 0;
   hitSound.play();
+
+  // FLASH EFFECT
+  flash.classList.remove("flash-active");
+  void flash.offsetWidth;
+  flash.classList.add("flash-active");
 
   // tunggu clash selesai
   setTimeout(() => {
@@ -109,13 +116,13 @@ function updateUI(playerMove, computerMove, result) {
 
       playerHand.classList.add("win-glow");
 
-      computerHand.classList.add("lose-shake");
+      computerHand.classList.add("lose-effect");
 
       // ✨ glow setelah shake selesai
       setTimeout(() => {
-        computerHand.classList.remove("lose-glow");
+        computerHand.classList.remove("lose-effect");
         void computerHand.offsetWidth;
-        computerHand.classList.add("lose-glow");
+        computerHand.classList.add("lose-effect");
       }, 400);
 
       winSound.currentTime = 0;
@@ -126,12 +133,12 @@ function updateUI(playerMove, computerMove, result) {
 
       computerHand.classList.add("win-glow");
 
-      playerHand.classList.add("lose-shake");
+      playerHand.classList.add("lose-effect");
 
       setTimeout(() => {
-        playerHand.classList.remove("lose-glow");
+        playerHand.classList.remove("lose-effect");
         void playerHand.offsetWidth;
-        playerHand.classList.add("lose-glow");
+        playerHand.classList.add("lose-effect");
       }, 400);
 
       loseSound.currentTime = 0;
