@@ -231,6 +231,7 @@ function toggleAutoPlay() {
     clearInterval(intervalId);
     intervalId = null;
     autoBtn.innerText = "Auto Play";
+    autoBtn.style.backgroundColor = "#0ea5e9";
     return;
   }
 
@@ -249,6 +250,7 @@ function toggleAutoPlay() {
   }, 2000);
 
   autoBtn.innerText = "Stop Play";
+  autoBtn.style.backgroundColor = "red";
 }
 
 autoBtn.addEventListener("click", () => {

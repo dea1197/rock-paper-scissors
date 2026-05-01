@@ -20,6 +20,10 @@ body {
   margin-bottom: 10px;
 }
 
+.score{
+  font-weight: bold;
+}
+
 /* Arena */
 .arena {
   display: flex;
@@ -79,6 +83,7 @@ body {
 
 /* Controls */
 .controls button {
+  font-weight: bold;
   margin: 5px;
   padding: 8px 12px;
   border-radius: 8px;

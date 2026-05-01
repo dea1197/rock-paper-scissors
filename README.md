@@ -23,7 +23,7 @@ An interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript, fe
 
 📸 <b>Preview</b><br>
 
-![Screenshot](images/Screenshot_1.png)<br>
+![Screenshot](images/Screenshot_2.png)<br>
 
 🎯 <b>How to Play</b><br>
 Click one of the buttons:<br>
